@@ -1,0 +1,129 @@
+/* Element Selectors */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  line-height: 2;
+  font-size: 4rem;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+
+h4 {
+  line-height: 1.5;
+  padding: 1rem
+}
+
+p {
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+/* Title */
+#title {
+  text-align: center;
+  padding: 5% 10% 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.title-box {
+  margin: auto;
+  /* width: 75%; */
+}
+
+.title-content {
+  padding: 1rem 0;
+}
+
+.github-icon {
+  color: rgb(25, 135, 84);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.github-icon:hover {
+  color: rgba(25, 135, 84, 0.9);
+  text-shadow: 3px 3px black;
+  /* font-size: 2.1rem; */
+}
+
+.linkedin-icon {
+  color: rgb(25, 135, 84);
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.linkedin-icon:hover {
+  color: rgba(25, 135, 84, 0.9);
+  text-shadow: 3px 3px black;
+  /* font-size: 2.1rem; */
+}
+
+.title-subtext {
+  text-decoration: overline;
+}
+
+.profile-image-box {
+  border-radius: 50%;
+  width: 16rem;
+  height: 16rem;
+  margin: auto;
+  padding: 1rem;
+  overflow: hidden;
+  box-shadow: 3px 3px black;
+}
+
+.title-image {
+  height: 14rem;
+}
+
+.bio {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: auto;
+  padding: 3rem;
+  width: 50%;
+}
+
+/* Feature */
+#feature {
+  text-align: center;
+  padding: 5% 10%
+}
+
+.feature-box {
+  padding: 5px;
+}
+
+.feature-content {
+  background-color: ;
+  border: 2px solid rgba(25, 135, 84, 0.25);
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
+  height: 100%;
+  padding: 1rem
+}
+
+.feature-content:hover {
+  border: 2px solid rgba(25, 135, 84, 0.75);
+  box-shadow: 3px 3px rgba(33, 37, 41, 0.8);
+}
+
+.feature-heading {
+  text-decoration: underline;
+  padding-bottom: 1.5rem;
+}
+
+.feature-list {
+  font-size: 1.2rem;
+  text-align: left;
+}
