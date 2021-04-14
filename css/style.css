@@ -4,8 +4,9 @@ body {
 }
 
 h1 {
-  line-height: 2;
+  line-height: 1;
   font-size: 4rem;
+  margin-bottom: 2rem
 }
 
 h2 {
@@ -73,17 +74,16 @@ li {
 }
 
 .profile-image-box {
-  border-radius: 50%;
-  width: 16rem;
-  height: 16rem;
   margin: auto;
   padding: 1rem;
-  overflow: hidden;
-  box-shadow: 3px 3px black;
 }
 
 .title-image {
   height: 14rem;
+  width: 14rem;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  box-shadow: 3px 3px black;
 }
 
 .bio {
@@ -91,7 +91,7 @@ li {
   line-height: 1.5;
   margin: auto;
   padding: 3rem;
-  width: 50%;
+  width: 100%;
 }
 
 /* Feature */
