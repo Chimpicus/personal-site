@@ -25,8 +25,9 @@ p {
 }
 
 li {
+  font-family: 'raleway'sans-serif;
   font-size: 1.5rem;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 /* Title */
@@ -45,13 +46,13 @@ li {
   padding: 1rem 0;
 }
 
-.github-icon {
+.link-icon {
   color: rgb(25, 135, 84);
   font-size: 2rem;
   padding: 1rem;
 }
 
-.github-icon:hover {
+.link-icon:hover {
   color: rgba(25, 135, 84, 0.9);
   text-shadow: 3px 3px black;
   /* font-size: 2.1rem; */
@@ -94,19 +95,21 @@ li {
   width: 100%;
 }
 
+/* Carousel of Skills */
 /* Feature */
 #feature {
   text-align: center;
-  padding: 5% 10%
+  padding: 0 10%
 }
 
 .feature-box {
+  margin: 2rem auto;
   padding: 5px;
 }
 
 .feature-content {
   background-color: ;
-  border: 2px solid rgba(25, 135, 84, 0.25);
+  border: 2px solid rgba(25, 135, 84, 0.4);
   border-radius: 10px;
   box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
   height: 100%;
@@ -126,4 +129,10 @@ li {
 .feature-list {
   font-size: 1.2rem;
   text-align: left;
+}
+
+/* Contact-me */
+#contact {
+  border-radius: 10px 10px 0 0;
+  text-align: center;
 }
