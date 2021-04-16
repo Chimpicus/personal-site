@@ -1,6 +1,7 @@
 /* Element Selectors */
 body {
   font-family: 'Ubuntu', sans-serif;
+  margin: 0 5%;
 }
 
 h1 {
@@ -32,9 +33,9 @@ li {
 
 /* Title */
 #title {
+  border-radius: 0 0 20px 20px;
   text-align: center;
   padding: 5% 10% 0;
-  border-radius: 0 0 10px 10px;
 }
 
 .title-box {
@@ -96,24 +97,30 @@ li {
 }
 
 /* Carousel of Skills */
+.carousel-item {
+  height: 150px;
+  padding: 0;
+  text-align: center;
+}
+
 /* Feature */
 #feature {
   text-align: center;
-  padding: 0 10%
+  padding: 5% 10%;
 }
 
 .feature-box {
-  margin: 2rem auto;
-  padding: 5px;
+  padding: 2rem 2rem;
+  text-align: center;
 }
 
 .feature-content {
-  background-color: ;
+  background-color: rgba(33, 37, 41, 0.1);
   border: 2px solid rgba(25, 135, 84, 0.4);
   border-radius: 10px;
   box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
   height: 100%;
-  padding: 1rem
+  padding: 1rem;
 }
 
 .feature-content:hover {
@@ -133,6 +140,20 @@ li {
 
 /* Contact-me */
 #contact {
-  border-radius: 10px 10px 0 0;
+  border-radius: 20px 20px 0 0;
   text-align: center;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
+
+  .carousel-item {
+    height: 200px;
+  }
 }
