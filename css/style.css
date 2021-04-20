@@ -2,6 +2,7 @@
 body {
   font-family: 'Ubuntu', sans-serif;
   margin: 0 5%;
+  text-align: center;
 }
 
 h1 {
@@ -31,11 +32,18 @@ li {
   font-weight: normal;
 }
 
+/* Navbar */
+#navbar {
+  text-align: center;
+}
+
 /* Title */
 #title {
+  border: none;
   border-radius: 0 0 20px 20px;
   text-align: center;
   padding: 5% 10% 0;
+  margin-bottom: 5%;
 }
 
 .title-box {
@@ -103,15 +111,19 @@ li {
   text-align: center;
 }
 
-/* Feature */
-#feature {
+/* skills */
+#skills {
   text-align: center;
-  padding: 5% 10%;
+}
+
+.skills-quote {
+  margin: 7% 15% 0;
 }
 
 .feature-box {
   padding: 2rem 2rem;
   text-align: center;
+  margin: 0 auto;
 }
 
 .feature-content {
@@ -136,6 +148,20 @@ li {
 .feature-list {
   font-size: 1.2rem;
   text-align: left;
+}
+
+/* projects */
+#projects {
+  text-align: center;
+  padding: 7% 15%
+}
+
+.project-feature {
+  border: 2px solid rgba(25, 135, 84, 0.4);
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
+  height: 100%;
+  padding: 1rem;
 }
 
 /* Contact-me */
