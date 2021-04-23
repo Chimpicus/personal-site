@@ -165,7 +165,7 @@ li {
 /* Contact-me */
 #contact {
   border-radius: 20px 20px 0 0;
-  padding: 3% 5%;
+  padding: 3% 5% 0;
   text-align: center;
 }
 
