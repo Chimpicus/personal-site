@@ -15,12 +15,13 @@
 .title__header {
   line-height: 1;
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .title__sub-header {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
+  text-decoration: overline;
 }
 
 .title__sub-header.title__sub-header--green {
