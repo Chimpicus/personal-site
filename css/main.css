@@ -4,6 +4,10 @@
   text-align: center;
 }
 
+#navbar {
+  font-size: 1.5rem;
+}
+
 .title {
   border: none;
   border-radius: 0 0 20px 20px;
@@ -53,18 +57,23 @@
   padding: 1rem;
 }
 
+.skills {
+  text-align: center;
+}
+
 .skills__quote {
   margin: 2% 15% 2%;
 }
 
 .feature {
+  font-family: 'Raleway', sans-serif;
   padding: 2rem 2rem;
   text-align: center;
   margin: 0 auto;
 }
 
 .feature__content {
-  background-color: rgba(33, 37, 41, 0.1);
+  background-color: rgba(33, 37, 41, 0.05);
   border: 2px solid rgba(25, 135, 84, 0.4);
   border-radius: 10px;
   box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
@@ -72,13 +81,38 @@
   padding: 1rem;
 }
 
+.feature__content:hover {
+  border: 2px solid rgba(25, 135, 84, 0.75);
+  box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
+}
+
 .feature__heading {
   text-decoration: underline;
-  padding-bottom: 1.5rem;
+  padding: 1.5rem 0 1rem;
 }
 
 .feature__list {
   font-size: 1.2rem;
   text-align: left;
+}
+
+.projects {
+  margin: 1rem rem;
+  text-align: center;
+  padding: 7% 15%;
+}
+
+.projects__feature {
+  border: 2px solid rgba(25, 135, 84, 0.4);
+  border-radius: 10px;
+  box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
+  height: 100%;
+  padding: 1rem;
+}
+
+.contact {
+  border-radius: 20px 20px 0 0;
+  padding: 1rem 2rem;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
