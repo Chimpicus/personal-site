@@ -49,22 +49,6 @@
   position: absolute;
 }
 
-.blob.top {
-  border-radius: 50%;
-  width: 100%;
-  height: 4%;
-  top: -3%;
-  left: 0;
-}
-
-.blob.bottom {
-  border-radius: 50%;
-  width: 100%;
-  height: 4%;
-  bottom: -3%;
-  left: 0;
-}
-
 .blob:nth-child(1) {
   width: 200px;
   height: 200px;
@@ -208,13 +192,19 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .body-wrapper {
   font-family: 'Ubuntu', sans-serif;
   margin: 0 0;
+  overflow-x: hidden;
   text-align: center;
 }
 
 .background {
+  background: linear-gradient(142deg, #676767 40%, #198754 100%, #0bc9ef 100%, #00d4ff 100%);
   background-image: repeating-linear-gradient(45deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(90deg, #111111, #424242);
   position: fixed !important;
   height: 100%;
@@ -244,10 +234,7 @@
 .title__sub-header {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
-  text-decoration: overline;
-}
-
-.title__sub-header.title__sub-header--green {
+  text-decoration: overline #198754;
   color: #198754;
 }
 
@@ -282,21 +269,46 @@
 }
 
 .custom-shape-divider-bottom-1624272282 .shape-fill {
-  fill: #FFFFFF;
-  opacity: 20%;
+  fill: lightgray;
+  opacity: 35%;
 }
 
 .about-me-wrapper {
-  height: 100vh;
+  height: 200vh;
   position: relative;
 }
 
 .about-me {
-  background-color: #ffff;
-  opacity: 20%;
-  height: 100vh;
+  background-color: lightgray;
+  opacity: 35%;
+  height: 200vh;
+  padding: 5rem;
   position: relative;
   width: 100vw;
+}
+
+.about-me__bio {
+  font-size: 2rem;
+  text-align: left;
+  opacity: 100%;
+}
+
+.about-me__skills {
+  font-size: 1.5rem;
+  opacity: 100%;
+  text-align: left;
+}
+
+.about-me__skills__table {
+  text-align: left;
+}
+
+.about-me__skills__table--green {
+  text-decoration: underline #198754;
+}
+
+.about-me__skills__table--orange {
+  text-decoration: underline orange;
 }
 
 .custom-shape-divider-top-1624273175 {
@@ -316,8 +328,8 @@
 }
 
 .custom-shape-divider-top-1624273175 .shape-fill {
-  fill: #FFFFFF;
-  opacity: 20%;
+  fill: lightgray;
+  opacity: 35%;
 }
 
 .contact {

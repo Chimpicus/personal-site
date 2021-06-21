@@ -3,13 +3,16 @@
 @import 'small-view';
 @import 'lava-lamp';
 
-
+html {
+   scroll-behavior: smooth;
+}
 
 
 
 .body-wrapper {
    font-family: 'Ubuntu', sans-serif;
    margin: 0 0;
+   overflow-x: hidden;
    text-align: center;
 
 
@@ -18,6 +21,7 @@
 
 
 .background {
+   background: linear-gradient(142deg, rgba(103, 103, 103, 1) 40%, rgba(25, 135, 84, 1) 100%, rgba(11, 201, 239, 1) 100%, rgba(0, 212, 255, 1) 100%);
    background-image: repeating-linear-gradient(45deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(90deg, rgb(17, 17, 17), rgb(66, 66, 66));
    position: fixed !important;
    height: 100%;
@@ -55,11 +59,8 @@
    &__sub-header {
       font-family: 'Raleway', sans-serif;
       line-height: 1.5;
-      text-decoration: overline;
-
-      &.title__sub-header--green {
-         color: $green;
-      }
+      text-decoration: overline $green;
+      color: $green;
    }
 
    &__link-icon {
@@ -101,21 +102,48 @@
 }
 
 .custom-shape-divider-bottom-1624272282 .shape-fill {
-   fill: #FFFFFF;
-   opacity: 20%;
+   fill: lightgray;
+
+   opacity: 35%;
 }
 
 .about-me-wrapper {
-   height: 100vh;
+   height: 200vh;
    position: relative;
 }
 
 .about-me {
-   background-color: #ffff;
-   opacity: 20%;
-   height: 100vh;
+   background-color: lightgray;
+   opacity: 35%;
+   height: 200vh;
+   padding: 5rem;
    position: relative;
    width: 100vw;
+
+   &__bio {
+      font-size: 2rem;
+      text-align: left;
+      opacity: 100%;
+   }
+
+   &__skills {
+      font-size: 1.5rem;
+      opacity: 100%;
+      text-align: left;
+
+      &__table {
+         text-align: left;
+
+         &--green {
+            text-decoration: underline $green;
+         }
+
+         &--orange {
+            text-decoration: underline orange;
+         }
+
+      }
+   }
 }
 
 .custom-shape-divider-top-1624273175 {
@@ -135,8 +163,8 @@
 }
 
 .custom-shape-divider-top-1624273175 .shape-fill {
-   fill: #FFFFFF;
-   opacity: 20%;
+   fill: lightgray;
+   opacity: 35%;
 }
 
 //---contact---
