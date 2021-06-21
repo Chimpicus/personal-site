@@ -1,5 +1,7 @@
 // ---imports---
 @import 'variables';
+@import 'small-view';
+@import 'lava-lamp';
 
 
 
@@ -7,9 +9,26 @@
 
 .body-wrapper {
    font-family: 'Ubuntu', sans-serif;
-   margin: 0 5%;
+   margin: 0 0;
    text-align: center;
+
+
+
 }
+
+
+.background {
+   background-image: repeating-linear-gradient(45deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(90deg, rgb(17, 17, 17), rgb(66, 66, 66));
+   position: fixed !important;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+
+}
+
+
+
+
 
 // ---nav---
 #navbar {
@@ -21,14 +40,16 @@
    border: none;
    border-radius: 0 0 20px 20px;
    text-align: center;
-   padding: 5% 10% 0;
-   margin-bottom: 5%;
+   padding: 0;
+   margin-bottom: 0%;
+   height: 100vh;
 
 
    &__header {
       line-height: 1;
       font-size: 4rem;
-      margin-bottom: 0rem;
+      margin: 25vh auto 1rem;
+
    }
 
    &__sub-header {
@@ -42,100 +63,85 @@
    }
 
    &__link-icon {
-      color: rgb(25, 135, 84);
+      color: $green;
       font-size: 2rem;
       padding: 1rem;
    }
 
 
-
-   &__image {
-      border: 4px solid #fff;
-      border-radius: 50%;
-      box-shadow: 3px 3px black;
-      margin: auto;
-
-   }
-
    &__link-icon:hover {
-      color: rgba(25, 135, 84, 0.9);
-      text-shadow: 3px 3px black;
+      color: $green;
+      opacity: 90%;
+      text-shadow: 2px 2px black;
       /* font-size: 2.1rem; */
    }
 
-   &__carousel {
-      font-size: 1.5rem;
-      line-height: 1.5;
-      padding: 1rem;
-   }
-}
-
-
-
-//---skills---
-
-.skills {
-
-   text-align: center;
-
-   &__quote {
-      margin: 2% 15% 2%;
-   }
-}
-
-.feature {
-   font-family: 'Raleway', sans-serif;
-   padding: 2rem 2rem;
-   text-align: center;
-   margin: 0 auto;
-
-   &__content {
-      background-color: rgba(33, 37, 41, 0.05);
-      border: 2px solid rgba(25, 135, 84, 0.4);
-      border-radius: 10px;
-      box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
-      height: 100%;
-      padding: 1rem;
-
-      &:hover {
-         border: 2px solid rgba(25, 135, 84, 0.75);
-         box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
-      }
-   }
-
-
-
-   &__heading {
-      text-decoration: underline;
-      padding: 1.5rem 0 1rem;
-   }
-
-   &__list {
-      font-size: 1.2rem;
-      text-align: left;
-   }
-
 
 }
 
-//---projects---
-
-.projects {
-   margin: 1rem rem;
-   text-align: center;
-   padding: 7% 15%;
 
 
-   &__feature {
-      border: 2px solid rgba(25, 135, 84, 0.4);
-      border-radius: 10px;
-      box-shadow: 3px 3px rgba(33, 37, 41, 0.5);
-      height: 100%;
-      padding: 1rem;
-   }
+//---about-me---
+
+.custom-shape-divider-bottom-1624272282 {
+   position: relative;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
 }
 
-// ---contact---
+.custom-shape-divider-bottom-1624272282 svg {
+   position: relative;
+   display: block;
+   width: calc(300% + 1.3px);
+   height: 200px;
+}
+
+.custom-shape-divider-bottom-1624272282 .shape-fill {
+   fill: #FFFFFF;
+   opacity: 20%;
+}
+
+.about-me-wrapper {
+   height: 100vh;
+   position: relative;
+}
+
+.about-me {
+   background-color: #ffff;
+   opacity: 20%;
+   height: 100vh;
+   position: relative;
+   width: 100vw;
+}
+
+.custom-shape-divider-top-1624273175 {
+   position: relative;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.custom-shape-divider-top-1624273175 svg {
+   position: relative;
+   display: block;
+   width: calc(300% + 1.3px);
+   height: 200px;
+}
+
+.custom-shape-divider-top-1624273175 .shape-fill {
+   fill: #FFFFFF;
+   opacity: 20%;
+}
+
+//---contact---
+
+
 .contact {
    border-radius: 20px 20px 0 0;
    padding: 1rem 2rem;
@@ -143,3 +149,9 @@
 
 
 }
+
+
+
+
+
+// phone view
