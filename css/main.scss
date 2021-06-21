@@ -11,7 +11,7 @@ html {
 
 .body-wrapper {
    font-family: 'Ubuntu', sans-serif;
-   margin: 0 0;
+   margin: 0;
    overflow-x: hidden;
    text-align: center;
 
@@ -45,7 +45,6 @@ html {
    border-radius: 0 0 20px 20px;
    text-align: center;
    padding: 0;
-   margin-bottom: 0%;
    height: 100vh;
 
 
@@ -113,8 +112,8 @@ html {
 }
 
 .about-me {
-   background-color: lightgray;
-   opacity: 35%;
+   background-color: rgba(211, 211, 211, 0.350);
+
    height: 200vh;
    padding: 5rem;
    position: relative;
@@ -135,11 +134,11 @@ html {
          text-align: left;
 
          &--green {
-            text-decoration: underline $green;
+            text-decoration: underline lightgreen;
          }
 
          &--orange {
-            text-decoration: underline orange;
+            text-decoration: underline lightsalmon;
          }
 
       }
