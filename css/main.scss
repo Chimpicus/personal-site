@@ -126,12 +126,20 @@ html {
    }
 
    &__skills {
+      background-color: rgba(255, 255, 255, 0.75);
       font-size: 1.5rem;
       opacity: 100%;
+      padding: 5%;
       text-align: left;
+      width: 45%;
 
       &__table {
          text-align: left;
+         margin: 1rem;
+
+         &__table-cell {
+            padding: 1rem;
+         }
 
          &--green {
             text-decoration: underline lightgreen;

@@ -292,13 +292,21 @@ html {
 }
 
 .about-me__skills {
+  background-color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   opacity: 100%;
+  padding: 5%;
   text-align: left;
+  width: 45%;
 }
 
 .about-me__skills__table {
   text-align: left;
+  margin: 1rem;
+}
+
+.about-me__skills__table__table-cell {
+  padding: 1rem;
 }
 
 .about-me__skills__table--green {

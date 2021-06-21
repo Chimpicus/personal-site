@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body class=" body-wrapper bg-light">
+<body class="body-wrapper bg-light">
   <!-- navbar -->
   <div class="background">
     <div class="lamp">
@@ -32,9 +32,6 @@
         <div class="blob"></div>
         <div class="blob"></div>
         <div class="blob"></div>
-
-
-
       </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -61,13 +58,12 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#skills">.Skills</a>
+              <button class="nav-link" onClick="navToSection('skills')">.Skills</button>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">.Projects</a>
+              <button class="nav-link" onClick="navToSection('projects')">.Projects</button>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">.Contact</a>
+              <button class="nav-link" onClick="navToSection('contact')">.Contact</button>
             </li>
           </ul>
         </div>
@@ -96,24 +92,24 @@
       <div class="about-me__bio text-dark">
         <p>Web developer looking for employment, based in South Wales.</p>
       </div>
-      <div class="about-me__skills">
+      <div class="about-me__skills" id="skills">
         <table>
           <tbody class="about-me__skills__table">
             <th>Skills</th>
             <tr>
-              <td class="about-me__skills__table--green">HTML</td>
-              <td class="about-me__skills__table--green">Sass</td>
+              <td class="about-me__skills__table--green"><i class="fab fa-html5"></i> HTML</td>
+              <td class="about-me__skills__table--green"><i class="fab fa-bootstrap"></i> Bootstrap</td>
               <td></td>
             </tr>
             <tr>
-              <td class="about-me__skills__table--green">CSS</td>
-              <td class="about-me__skills__table--green">Boostrap</td>
+              <td class="about-me__skills__table--green"><i class="fab fa-css3-alt"></i> CSS</td>
+              <td class="about-me__skills__table--green"><i class="fab fa-sass"></i> Sass</td>
               <td></td>
             </tr>
             <tr>
-              <td class="about-me__skills__table--green">JavaScript</td>
-              <td class="about-me__skills__table--green">Git</td>
-              <td class="about-me__skills__table--orange">React</td>
+              <td class="about-me__skills__table--green"><i class="fab fa-js"></i> JavaScript</td>
+              <td class="about-me__skills__table--green"><i class="fab fa-git-alt"></i> Git</td>
+              <td class="about-me__skills__table--orange"><i class="fab fa-react"></i> React</td>
             </tr>
           </tbody>
 
@@ -150,6 +146,8 @@
     <a href="https://linkedin.com/in/casey-boyes-662029117" target="_blank"><i
         class="link-icon fab fa-linkedin-in"></i></a>
   </div>
+
+  <script src="index.js"></script>
 
   <!-- Bootstap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
