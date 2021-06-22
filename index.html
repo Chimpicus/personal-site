@@ -46,9 +46,9 @@
 
 
   <!-- title -->
-  <div id="title" class="title container-fluid  text-light">
+  <div id="title" class="title container-fluid text-light">
     <!-- navbar -->
-    <nav class="navnavbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="nav-section container-fluid">
         <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
           aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,12 +57,13 @@
         <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <button class="nav-button nav-link" onClick="navToSection('skills')">.Skills</button>
+              <button class="nav-button btn btn-lg text-muted" onClick="navToSection('skills')">.Skills</button>
             </li>
             <li class="nav-item">
-              <button class="nav-button nav-link" onClick="navToSection('projects')">.Projects</button>
+              <button class="nav-button btn btn-lg text-muted" onClick="navToSection('projects')">.Projects</button>
             </li>
-            <button class="nav-button nav-link" onClick="navToSection('contact')">.Contact</button>
+            <li class="nav-item">
+              <button class="nav-button btn btn-lg text-muted" onClick="navToSection('contact')">.Contact</button>
             </li>
           </ul>
         </div>
@@ -92,27 +93,10 @@
         <p>Web developer looking for employment, based in South Wales.</p>
       </div>
       <div class="about-skills" id="skills">
-        <table>
-          <tbody class="about-skills-table">
-            <th>Skills</th>
-            <tr>
-              <td class="about-skills-table--green"><i class="fab fa-html5"></i> HTML</td>
-              <td class="about-skills-table--green"><i class="fab fa-bootstrap"></i> Bootstrap</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="about-skills-table--green"><i class="fab fa-css3-alt"></i> CSS</td>
-              <td class="about-skills-table--green"><i class="fab fa-sass"></i> Sass</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td class="about-skills-table--green"><i class="fab fa-js"></i> JavaScript</td>
-              <td class="about-skills-table--green"><i class="fab fa-git-alt"></i> Git</td>
-              <td class="about-skills-table--orange"><i class="fab fa-react"></i> React</td>
-            </tr>
-          </tbody>
-
-        </table>
+        <div class="about-skills-cover">
+          <h2>Skills</h2>
+        </div>
+        <div class="about-skills-grid"></div>
       </div>
 
     </div>
