@@ -192,6 +192,49 @@
   }
 }
 
+.custom-shape-divider-bottom-1624272282 {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1624272282 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-bottom-1624272282 .shape-fill {
+  fill: lightgray;
+  opacity: 35%;
+}
+
+.custom-shape-divider-top-1624273175 {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1624273175 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 200px;
+}
+
+.custom-shape-divider-top-1624273175 .shape-fill {
+  fill: lightgray;
+  opacity: 35%;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -224,60 +267,33 @@ html {
   height: 100vh;
 }
 
-.title__header {
+.title-header {
   line-height: 1;
   font-size: 4rem;
   margin: 25vh auto 1rem;
 }
 
-.title__sub-header {
+.title-sub-header {
   font-family: 'Raleway', sans-serif;
   line-height: 1.5;
   text-decoration: overline #198754;
   color: #198754;
 }
 
-.title__link-icon {
+.title-link-icon {
   color: #198754;
   font-size: 2rem;
   padding: 1rem;
 }
 
-.title__link-icon:hover {
+.title-link-icon:hover {
   color: #198754;
   opacity: 90%;
   text-shadow: 2px 2px black;
   /* font-size: 2.1rem; */
 }
 
-.custom-shape-divider-bottom-1624272282 {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1624272282 svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 200px;
-}
-
-.custom-shape-divider-bottom-1624272282 .shape-fill {
-  fill: lightgray;
-  opacity: 35%;
-}
-
-.about-me-wrapper {
-  height: 200vh;
-  position: relative;
-}
-
-.about-me {
+.about {
   background-color: rgba(211, 211, 211, 0.35);
   height: 200vh;
   padding: 5rem;
@@ -285,13 +301,13 @@ html {
   width: 100vw;
 }
 
-.about-me__bio {
+.about-bio {
   font-size: 2rem;
   text-align: left;
   opacity: 100%;
 }
 
-.about-me__skills {
+.about-skills {
   background-color: rgba(255, 255, 255, 0.75);
   font-size: 1.5rem;
   opacity: 100%;
@@ -300,42 +316,21 @@ html {
   width: 45%;
 }
 
-.about-me__skills__table {
+.about-skills-table {
   text-align: left;
   margin: 1rem;
 }
 
-.about-me__skills__table__table-cell {
+.about-skills-table-table-cell {
   padding: 1rem;
 }
 
-.about-me__skills__table--green {
+.about-skills-table--green {
   text-decoration: underline lightgreen;
 }
 
-.about-me__skills__table--orange {
+.about-skills-table--orange {
   text-decoration: underline lightsalmon;
-}
-
-.custom-shape-divider-top-1624273175 {
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1624273175 svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 200px;
-}
-
-.custom-shape-divider-top-1624273175 .shape-fill {
-  fill: lightgray;
-  opacity: 35%;
 }
 
 .contact {

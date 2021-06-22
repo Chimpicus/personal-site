@@ -2,23 +2,19 @@
 @import 'variables';
 @import 'small-view';
 @import 'lava-lamp';
+@import 'svg';
+// @import 'bootstrap';
 
 html {
    scroll-behavior: smooth;
 }
-
-
 
 .body-wrapper {
    font-family: 'Ubuntu', sans-serif;
    margin: 0;
    overflow-x: hidden;
    text-align: center;
-
-
-
 }
-
 
 .background {
    background: linear-gradient(142deg, rgba(103, 103, 103, 1) 40%, rgba(25, 135, 84, 1) 100%, rgba(11, 201, 239, 1) 100%, rgba(0, 212, 255, 1) 100%);
@@ -27,12 +23,7 @@ html {
    height: 100%;
    width: 100%;
    z-index: -1;
-
 }
-
-
-
-
 
 // ---nav---
 #navbar {
@@ -48,28 +39,28 @@ html {
    height: 100vh;
 
 
-   &__header {
+   &-header {
       line-height: 1;
       font-size: 4rem;
       margin: 25vh auto 1rem;
 
    }
 
-   &__sub-header {
+   &-sub-header {
       font-family: 'Raleway', sans-serif;
       line-height: 1.5;
       text-decoration: overline $green;
       color: $green;
    }
 
-   &__link-icon {
+   &-link-icon {
       color: $green;
       font-size: 2rem;
       padding: 1rem;
    }
 
 
-   &__link-icon:hover {
+   &-link-icon:hover {
       color: $green;
       opacity: 90%;
       text-shadow: 2px 2px black;
@@ -83,49 +74,20 @@ html {
 
 //---about-me---
 
-.custom-shape-divider-bottom-1624272282 {
-   position: relative;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   overflow: hidden;
-   line-height: 0;
-   transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1624272282 svg {
-   position: relative;
-   display: block;
-   width: calc(300% + 1.3px);
-   height: 200px;
-}
-
-.custom-shape-divider-bottom-1624272282 .shape-fill {
-   fill: lightgray;
-
-   opacity: 35%;
-}
-
-.about-me-wrapper {
-   height: 200vh;
-   position: relative;
-}
-
-.about-me {
+.about {
    background-color: rgba(211, 211, 211, 0.350);
-
    height: 200vh;
    padding: 5rem;
    position: relative;
    width: 100vw;
 
-   &__bio {
+   &-bio {
       font-size: 2rem;
       text-align: left;
       opacity: 100%;
    }
 
-   &__skills {
+   &-skills {
       background-color: rgba(255, 255, 255, 0.75);
       font-size: 1.5rem;
       opacity: 100%;
@@ -133,11 +95,11 @@ html {
       text-align: left;
       width: 45%;
 
-      &__table {
+      &-table {
          text-align: left;
          margin: 1rem;
 
-         &__table-cell {
+         &-table-cell {
             padding: 1rem;
          }
 
@@ -152,28 +114,6 @@ html {
       }
    }
 }
-
-.custom-shape-divider-top-1624273175 {
-   position: relative;
-   top: 0;
-   left: 0;
-   width: 100%;
-   overflow: hidden;
-   line-height: 0;
-}
-
-.custom-shape-divider-top-1624273175 svg {
-   position: relative;
-   display: block;
-   width: calc(300% + 1.3px);
-   height: 200px;
-}
-
-.custom-shape-divider-top-1624273175 .shape-fill {
-   fill: lightgray;
-   opacity: 35%;
-}
-
 //---contact---
 
 
