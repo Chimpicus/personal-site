@@ -240,7 +240,7 @@ html {
 }
 
 .body-wrapper {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin: 0;
   overflow-x: hidden;
   text-align: center;
@@ -273,22 +273,22 @@ html {
   text-shadow: 1px 1px black;
 }
 
-.title-sub-header {
-  font-family: 'Raleway', sans-serif;
+.title-subheader {
+  font-family: "Raleway", sans-serif;
   line-height: 1.5;
   text-decoration: overline #198754;
   color: #198754;
   text-shadow: 1px 1px black;
 }
 
-.title-link-icon {
+.title-icon {
   color: #198754;
   font-size: 2rem;
   padding: 1rem;
   text-shadow: 1px 1px black;
 }
 
-.title-link-icon:hover {
+.title-icon:hover {
   color: #ffff;
   opacity: 50%;
   /* font-size: 2.1rem; */
@@ -296,47 +296,80 @@ html {
 
 .about {
   background-color: rgba(211, 211, 211, 0.8);
+  font-family: "Raleway", sans-serif;
   height: 200vh;
-  padding: 5rem;
+  padding: 10%;
   position: relative;
   width: 100vw;
+  display: flex;
 }
 
 .about-bio {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
   opacity: 100%;
 }
 
 .about-skills {
   background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
-  opacity: 100%;
+  position: absolute;
+  text-align: left;
+  overflow: hidden;
+}
+
+.about-skills-cover {
+  background-color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 20rem !important;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  text-decoration: 2px underline;
+  width: 100%;
+  box-shadow: 2px 2px lightgrey;
+}
+
+.about-skills-cover-header {
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.about-skills-cover:hover {
+  opacity: 0%;
+}
+
+.about-skills-grid {
   padding: 5%;
-  text-align: left;
-  width: 45%;
 }
 
-.about-skills-table {
-  text-align: left;
-  margin: 1rem;
-}
-
-.about-skills-table-table-cell {
-  padding: 1rem;
-}
-
-.about-skills-table--green {
+.about--green {
   text-decoration: underline lightgreen;
 }
 
-.about-skills-table--orange {
+.about--orange {
   text-decoration: underline lightsalmon;
 }
 
 .contact {
   border-radius: 20px 20px 0 0;
+  margin: 4rem 15%;
   padding: 1rem 2rem;
   text-align: center;
+}
+
+.contact-icon {
+  color: #198754;
+  font-size: 2rem;
+  padding: 1rem;
+  text-shadow: 1px 1px black;
+}
+
+.contact-icon:hover {
+  color: #ffff;
+  opacity: 50%;
+  /* font-size: 2.1rem; */
 }
 /*# sourceMappingURL=main.css.map */
