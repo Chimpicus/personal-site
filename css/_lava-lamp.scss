@@ -24,8 +24,9 @@
 
     border-radius: 50%;
 
-    background: linear-gradient(142deg, rgba(103, 103, 103, 1) 40%, rgba(25, 135, 84, 1) 100%, rgba(11, 201, 239, 1) 100%, rgba(0, 212, 255, 1) 100%);
-    opacity: 30%;
+    // background: linear-gradient(142deg, rgba(25, 135, 84, 1) 10%,  rgba(103, 103, 103, 1) 30%, rgba(25, 135, 84, 1) 80% ,rgba(25, 135, 84, 1) 100%);
+    background: $lightgreen;
+    opacity: 100%;
     /* Other sample colors:
     Orange: #e8630a
     Pink: #EA3281

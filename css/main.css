@@ -30,8 +30,8 @@
 
 .blob {
   border-radius: 50%;
-  background: linear-gradient(142deg, #676767 40%, #198754 100%, #0bc9ef 100%, #00d4ff 100%);
-  opacity: 30%;
+  background: #4bb96e;
+  opacity: 100%;
   /* Other sample colors:
     Orange: #e8630a
     Pink: #EA3281
@@ -211,7 +211,7 @@
 
 .custom-shape-divider-bottom-1624272282 .shape-fill {
   fill: lightgray;
-  opacity: 35%;
+  opacity: 80%;
 }
 
 .custom-shape-divider-top-1624273175 {
@@ -232,7 +232,7 @@
 
 .custom-shape-divider-top-1624273175 .shape-fill {
   fill: lightgray;
-  opacity: 35%;
+  opacity: 80%;
 }
 
 html {
@@ -247,8 +247,7 @@ html {
 }
 
 .background {
-  background: linear-gradient(142deg, #676767 40%, #198754 100%, #0bc9ef 100%, #00d4ff 100%);
-  background-image: repeating-linear-gradient(45deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(90deg, #111111, #424242);
+  background-image: repeating-linear-gradient(45deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(180deg, rgba(17, 17, 17, 0.9) 90%, rgba(25, 135, 85, 0.9) 100%);
   position: fixed !important;
   height: 100%;
   width: 100%;
@@ -271,6 +270,7 @@ html {
   line-height: 1;
   font-size: 4rem;
   margin: 25vh auto 1rem;
+  text-shadow: 1px 1px black;
 }
 
 .title-sub-header {
@@ -278,23 +278,24 @@ html {
   line-height: 1.5;
   text-decoration: overline #198754;
   color: #198754;
+  text-shadow: 1px 1px black;
 }
 
 .title-link-icon {
   color: #198754;
   font-size: 2rem;
   padding: 1rem;
+  text-shadow: 1px 1px black;
 }
 
 .title-link-icon:hover {
-  color: #198754;
-  opacity: 90%;
-  text-shadow: 2px 2px black;
+  color: #ffff;
+  opacity: 50%;
   /* font-size: 2.1rem; */
 }
 
 .about {
-  background-color: rgba(211, 211, 211, 0.35);
+  background-color: rgba(211, 211, 211, 0.8);
   height: 200vh;
   padding: 5rem;
   position: relative;
