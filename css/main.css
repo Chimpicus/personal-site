@@ -296,6 +296,7 @@ html {
 
 .about {
   background-color: rgba(211, 211, 211, 0.8);
+  display: flex;
   font-family: "Raleway", sans-serif;
   height: 200vh;
   padding: 10%;
@@ -315,6 +316,8 @@ html {
   display: flex;
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
+  height: auto;
+  justify-content: space-around;
   position: absolute;
   text-align: left;
   overflow: hidden;
@@ -335,14 +338,15 @@ html {
 .about-skills-cover-header {
   font-size: 5rem;
   font-weight: 200;
+  margin: auto;
+}
+
+.about-skills-grid {
+  margin: 5px 5px 5px 10px;
 }
 
 .about-skills-cover:hover {
   opacity: 0%;
-}
-
-.about-skills-grid {
-  padding: 5%;
 }
 
 .about--green {

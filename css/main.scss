@@ -80,6 +80,7 @@ html {
 
 .about {
    background-color: rgba(211, 211, 211, 0.800);
+   display: flex;
    font-family: $raleway;
    height: 200vh;
    padding: 10%;
@@ -98,9 +99,12 @@ html {
       display: flex;
       font-family: $raleway;
       font-size: 1.5rem;
+      height: auto;
+      justify-content: space-around;
       position: absolute;
       text-align: left;
       overflow: hidden;
+      
       
 
       &-cover {
@@ -116,20 +120,20 @@ html {
          &-header{
             font-size: 5rem;
             font-weight: 200;
+            margin: auto;
          }
+      }
+      &-grid {
+         margin: 5px 5px 5px 10px;
       }
 
       &-cover:hover {
          opacity: 0%;
       }
-&-grid {
-   padding: 5%;
-}
+   
+   } 
       
-         
-      }
 
-      
 
          &--green {
             text-decoration: underline lightgreen;
