@@ -90,16 +90,36 @@ html {
       height: auto;
       font-size: 1.2rem;
       margin: 5% 0;
-      padding: 0;
+      padding: 2%;
+      position: relative;
       text-align: center;
+
+      &-cover {
+         align-items: center;
+         background-color: rgb(255, 255, 255,);
+         border-bottom: 1px solid black;
+         border-left: 1px solid black;
+         display: flex;
+         font-family: $raleway;
+         justify-content: center;
+         padding: 0;
+         position: absolute;
+         text-decoration:  2px underline;
+         transition: 0.3s;
+         height: 100%;
+         width: 100%;
+      }
    }
 
    &-skills {
+      align-content: center;
       background-color: rgba(255, 255, 255, 0.75);
       font-family: $raleway;
+      font-size: 20px;
       display: flex;
       height: auto;
       margin: 5% auto;
+      overflow: hidden;
       padding: 0;
       position: relative;
       text-align: left;
@@ -127,10 +147,28 @@ html {
             text-align: center;
             
          }
+
       }
       &-grid {
-         margin: 5px 5px 5px 5px;
-         
+         align-content: space-between;
+         border-left: 1px solid black;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 5%;
+         padding: 5% 0;
+         height: 200px;
+        
+        
+      &-item {
+         flex: 1;
+         font-family: $raleway;
+         font-size: 20px;
+         margin: 10px;
+      }
+
+     
          
       }
 
@@ -141,11 +179,14 @@ html {
    
    } 
    &-devskills {
+      align-content: center;
       background-color: rgba(255, 255, 255, 0.75);
       font-family: $raleway;
+      font-size: 20px;
       display: flex;
       height: auto;
       margin: 5% auto;
+      overflow: hidden;
       padding: 0;
       position: relative;
       text-align: left;
@@ -167,14 +208,28 @@ html {
          width: 100%;
 
          &-header{
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 200;
            text-align: center;
          }
       }
       &-grid {
-      
-         margin: 5px 5px 5px 10px;
+         align-content: space-between;
+         border-left: 1px solid black;
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         margin: 5%;
+         padding: 5% 0;
+         height: 100px;
+
+         &-item {
+            font-family: $raleway;
+            font-size: 20px;
+            margin: 10px;
+         }     
+         
       }
 
       &-cover:hover {
@@ -232,8 +287,10 @@ html {
     margin: 0 auto; 
     padding: 5%;
 
-     &-skills-grid {
-      font-size: 1.5rem;
+     &-skills-grid-item{
+      font-size: 15px;
+
+      
      }
 
   }
