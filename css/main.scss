@@ -1,6 +1,5 @@
 // ---imports---
 @import 'variables';
-@import 'small-view';
 @import 'lava-lamp';
 @import 'svg';
 // @import 'bootstrap';
@@ -80,55 +79,107 @@ html {
 
 .about {
    background-color: rgba(211, 211, 211, 0.800);
-   display: flex;
    font-family: $raleway;
-   height: 200vh;
-   padding: 10%;
-   position: relative;
+   font-size: 30px;
+   height: 150vh;
+   padding: 5% 10%;
    width: 100vw;
-   display: flex;
 
    &-bio {
-      font-size: 1.5rem;
-      text-align: left;
-      opacity: 100%;
+      background-color: rgba(255, 255, 255, 0.75); 
+      height: auto;
+      font-size: 1.2rem;
+      margin: 5% 0;
+      padding: 0;
+      text-align: center;
    }
 
    &-skills {
       background-color: rgba(255, 255, 255, 0.75);
-      display: flex;
       font-family: $raleway;
-      font-size: 1.5rem;
+      display: flex;
       height: auto;
-      justify-content: space-around;
-      position: absolute;
+      margin: 5% auto;
+      padding: 0;
+      position: relative;
       text-align: left;
-      overflow: hidden;
-      
-      
-
+      width: 100%;
+     
       &-cover {
+         align-items: center;
          background-color: rgb(255, 255, 255,);
+         border-bottom: 1px solid black;
+         border-left: 1px solid black;
+         display: flex;
          font-family: $raleway;
-         font-size: 20rem !important;
-         height: 100%;
-         text-align: center;
+         justify-content: center;
+         padding: 0;
          position: absolute;
          text-decoration:  2px underline;
+         transition: 0.3s;
+         height: 100%;
          width: 100%;
-         box-shadow: 2px 2px lightgrey;
+         
+
          &-header{
             font-size: 5rem;
             font-weight: 200;
-            margin: auto;
+            text-align: center;
+            
          }
       }
       &-grid {
+         margin: 5px 5px 5px 5px;
+         
+         
+      }
+
+      &-cover:hover {
+         opacity: 0%;
+         transition: 0.3s;
+      }
+   
+   } 
+   &-devskills {
+      background-color: rgba(255, 255, 255, 0.75);
+      font-family: $raleway;
+      display: flex;
+      height: auto;
+      margin: 5% auto;
+      padding: 0;
+      position: relative;
+      text-align: left;
+      width: 100%;
+     
+      &-cover {
+         align-items: center;
+         background-color: rgb(255, 255, 255,);
+         border-bottom: 1px solid black;
+         border-left: 1px solid black;
+         display: flex;
+         font-family: $raleway;
+         justify-content: center;
+         padding: 0;
+         position: absolute;
+         text-decoration:  2px underline;
+         transition: 0.3s;
+         height: 100%;
+         width: 100%;
+
+         &-header{
+            font-size: 3rem;
+            font-weight: 200;
+           text-align: center;
+         }
+      }
+      &-grid {
+      
          margin: 5px 5px 5px 10px;
       }
 
       &-cover:hover {
          opacity: 0%;
+         transition: 0.3s;
       }
    
    } 
@@ -150,9 +201,7 @@ html {
 
 
 .contact {
-   border-radius: 20px 20px 0 0;
-   margin: 4rem 15%;
-   padding: 1rem 2rem;
+   padding: 10% 0;
    text-align: center;
 
    &-icon {
@@ -162,12 +211,9 @@ html {
       text-shadow:  1px 1px black;
    }
 
-
    &-icon:hover {
       color: #ffff;
       opacity: 50%;
-      ;
-      /* font-size: 2.1rem; */
    }
 }
 
@@ -176,3 +222,19 @@ html {
 
 
 // phone view
+@media (max-width: 481px) {
+   .body-wrapper {
+      margin: 0 0;
+    
+   }
+
+   .about {
+    margin: 0 auto; 
+    padding: 5%;
+
+     &-skills-grid {
+      font-size: 1.5rem;
+     }
+
+  }
+ }
