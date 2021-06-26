@@ -63,7 +63,7 @@
     right: 30%;
     bottom: -35%;
 
-    animation: wobble 3s ease-in-out alternate infinite, blob-two ease-in-out 28s infinite;
+    animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 28s infinite;
 
 
 
@@ -92,7 +92,7 @@
     height: 235px;
     bottom: -19%;
     left: 30%;
-    animation: wobble 2s ease-in-out alternate infinite, blob-four ease-in-out 25s infinite;
+    animation: wobble 6s ease-in-out alternate infinite, blob-four ease-in-out 25s infinite;
 }
 
 .blob:nth-child(5) {
@@ -101,7 +101,7 @@
     bottom: -25%;
     left: 34%;
 
-    animation: wobble 1s ease-in-out alternate infinite, blob-five ease-in-out 32s infinite;
+    animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 32s infinite;
 }
 
 .blob:nth-child(6) {
@@ -110,7 +110,7 @@
     bottom: -25%;
     right: 34%;
 
-    animation: wobble 4s ease-in-out alternate infinite, blob-six ease-in-out 12s infinite;
+    animation: wobble 8s ease-in-out alternate infinite, blob-six ease-in-out 12s infinite;
 }
 
 .blob:nth-child(7) {
@@ -119,7 +119,7 @@
     bottom: -45%;
     right: 40%;
 
-    animation: wobble 3s ease-in-out alternate infinite, blob-seven ease-in-out 42s infinite;
+    animation: wobble 13s ease-in-out alternate infinite, blob-seven ease-in-out 42s infinite;
 }
 
 @keyframes blob-one {
