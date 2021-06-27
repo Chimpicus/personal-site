@@ -19,6 +19,7 @@ html {
    background-image: repeating-linear-gradient(45deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(180deg, rgba(17, 17, 17, 0.900) 90%, rgba(25, 135, 85, 0.900) 100%);
    position: fixed !important;
    height: 100%;
+   user-select: none;
    width: 100%;
    z-index: -1;
 }
@@ -87,15 +88,18 @@ html {
 
    &-bio {
       background-color: rgba(255, 255, 255, 0.75); 
-      height: auto;
+      height: 100%;
       font-size: 1.2rem;
       margin: 5% 0;
       padding: 0;
       position: relative;
       text-align: center;
+      justify-content: center;
+      align-content: center;
 
       &-text {
          border-left: 1px solid black;
+         margin: 5%;
          padding: 5%;
       }
 
