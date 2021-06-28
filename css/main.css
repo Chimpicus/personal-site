@@ -241,6 +241,7 @@ html {
   background-image: repeating-linear-gradient(45deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(180deg, rgba(17, 17, 17, 0.9) 90%, rgba(25, 135, 85, 0.9) 100%);
   position: fixed !important;
   height: 100%;
+  user-select: none;
   width: 100%;
   z-index: -1;
 }
@@ -290,20 +291,25 @@ html {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
   height: auto;
+  justify-content: space-around;
   padding: 5% 10%;
   width: 100vw;
 }
 
 .about-bio {
+  align-content: center;
   background-color: rgba(255, 255, 255, 0.75);
-  height: 100%;
+  display: flex;
   font-size: 1.2rem;
-  margin: 5% 0;
+  font-family: "Raleway", sans-serif;
+  height: 90%;
+  justify-content: center;
+  margin: 5% auto;
+  overflow: hidden;
   padding: 0;
   position: relative;
   text-align: center;
-  justify-content: center;
-  align-content: center;
+  width: 100%;
 }
 
 .about-bio-text {

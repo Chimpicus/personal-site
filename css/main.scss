@@ -83,19 +83,24 @@ html {
    font-family: $raleway;
    font-size: 30px;
    height: auto;
+   justify-content: space-around;
    padding: 5% 10%;
    width: 100vw;
 
    &-bio {
-      background-color: rgba(255, 255, 255, 0.75); 
-      height: 100%;
+      align-content: center;
+      background-color: rgba(255, 255, 255, 0.75);      
+      display: flex;
       font-size: 1.2rem;
-      margin: 5% 0;
+      font-family: $raleway; 
+      height: 90%;
+      justify-content: center;
+      margin: 5% auto;
+      overflow: hidden;
       padding: 0;
       position: relative;
       text-align: center;
-      justify-content: center;
-      align-content: center;
+      width: 100%;
 
       &-text {
          border-left: 1px solid black;
