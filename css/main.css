@@ -510,6 +510,9 @@ html body::-webkit-scrollbar-thumb {
     margin: 0 auto;
     padding: 5%;
   }
+  .about-skills {
+    margin-top: 5%;
+  }
   .about-skills-grid-item {
     font-size: 15px;
   }

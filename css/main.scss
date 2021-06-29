@@ -317,15 +317,19 @@ body::-webkit-scrollbar-thumb {
     
    }
 
-   .about {
+   .about{
     margin: 0 auto; 
     padding: 5%;
 
-     &-skills-grid-item{
+      &-skills{
+       margin-top: 5%;
+
+     &-grid-item{
       font-size: 15px;
 
       
      }
+   }
 
   }
  }
