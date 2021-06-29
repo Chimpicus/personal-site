@@ -312,6 +312,7 @@ html body::-webkit-scrollbar-thumb {
 
 .about-bio {
   align-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.75);
   display: flex;
   font-size: 1.2rem;
@@ -360,6 +361,7 @@ html body::-webkit-scrollbar-thumb {
 
 .about-skills {
   align-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.75);
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -420,6 +422,7 @@ html body::-webkit-scrollbar-thumb {
 
 .about-devskills {
   align-content: center;
+  align-items: center;
   background-color: rgba(255, 255, 255, 0.75);
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -442,7 +445,7 @@ html body::-webkit-scrollbar-thumb {
   justify-content: center;
   padding: 0;
   position: absolute;
-  text-decoration: 2px underline;
+  text-decoration: 1px underline;
   transition: 0.3s;
   height: 100%;
   width: 100%;
@@ -502,10 +505,7 @@ html body::-webkit-scrollbar-thumb {
   opacity: 50%;
 }
 
-@media (max-width: 481px) {
-  .body-wrapper {
-    margin: 0 0;
-  }
+@media (max-width: 992px) {
   .about {
     margin: 0 auto;
     padding: 5%;
@@ -515,6 +515,12 @@ html body::-webkit-scrollbar-thumb {
   }
   .about-skills-grid-item {
     font-size: 15px;
+  }
+}
+
+@media (max-width: 416px) {
+  .body-wrapper {
+    margin: 0 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

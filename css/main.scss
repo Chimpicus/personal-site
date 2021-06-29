@@ -104,6 +104,7 @@ body::-webkit-scrollbar-thumb {
 
    &-bio {
       align-content: center;
+      align-items: center;
       background-color: rgba(255, 255, 255, 0.75);      
       display: flex;
       font-size: 1.2rem;
@@ -152,6 +153,7 @@ body::-webkit-scrollbar-thumb {
 
    &-skills {
       align-content: center;
+      align-items: center;
       background-color: rgba(255, 255, 255, 0.75);
       font-family: $raleway;
       font-size: 20px;
@@ -215,6 +217,7 @@ body::-webkit-scrollbar-thumb {
    } 
    &-devskills {
       align-content: center;
+      align-items: center;
       background-color: rgba(255, 255, 255, 0.75);
       font-family: $raleway;
       font-size: 20px;
@@ -236,7 +239,7 @@ body::-webkit-scrollbar-thumb {
          justify-content: center;
          padding: 0;
          position: absolute;
-         text-decoration:  2px underline;
+         text-decoration:  1px underline;
          transition: 0.3s;
          height: 100%;
          width: 100%;
@@ -244,7 +247,7 @@ body::-webkit-scrollbar-thumb {
          &-header{
             font-size: 2rem;
             font-weight: 200;
-           text-align: center;
+            text-align: center;
          }
       }
       &-grid {
@@ -311,11 +314,8 @@ body::-webkit-scrollbar-thumb {
 
 
 // phone view
-@media (max-width: 481px) {
-   .body-wrapper {
-      margin: 0 0;
-    
-   }
+@media (max-width: 992px) {
+   
 
    .about{
     margin: 0 auto; 
@@ -332,4 +332,11 @@ body::-webkit-scrollbar-thumb {
    }
 
   }
+ }
+
+ @media (max-width:416px) {
+   .body-wrapper {
+      margin: 0 0;
+    
+   }
  }
