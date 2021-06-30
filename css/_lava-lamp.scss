@@ -23,6 +23,7 @@
 .blob {
 
     border-radius: 50%;
+    filter: blur(3px);
 
     // background: linear-gradient(142deg, rgba(25, 135, 84, 1) 10%,  rgba(103, 103, 103, 1) 30%, rgba(25, 135, 84, 1) 80% ,rgba(25, 135, 84, 1) 100%);
     background: $lightgreen;
@@ -54,7 +55,7 @@
     left: 35%;
     bottom: -5%;
 
-    animation: wobble 4s ease-in-out alternate infinite, blob-one ease-in-out 23s infinite;
+    animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
 }
 
 .blob:nth-child(2) {
@@ -63,7 +64,7 @@
     right: 30%;
     bottom: -45%;
 
-    animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 28s infinite;
+    animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 38s infinite;
 
 
 
@@ -75,7 +76,7 @@
     bottom: -15%;
     left: 34%;
 
-    animation: wobble 6s ease-in-out alternate infinite, blob-three ease-in-out 16s infinite;
+    animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
 }
 
 .blob:nth-child(4) {
@@ -84,7 +85,7 @@
     bottom: -19%;
     left: 30%;
 
-    animation: wobble 7s ease-in-out alternate infinite, blob-four ease-in-out 22s infinite;
+    animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 32s infinite;
 }
 
 .blob:nth-child(4) {
@@ -92,7 +93,7 @@
     height: 235px;
     bottom: -25%;
     left: 30%;
-    animation: wobble 6s ease-in-out alternate infinite, blob-four ease-in-out 25s infinite;
+    animation: wobble 11s ease-in-out alternate infinite, blob-four ease-in-out 35s infinite;
 }
 
 .blob:nth-child(5) {
@@ -101,7 +102,7 @@
     bottom: -25%;
     left: 34%;
 
-    animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 32s infinite;
+    animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 28s infinite;
 }
 
 .blob:nth-child(6) {
@@ -110,16 +111,16 @@
     bottom: -25%;
     right: 34%;
 
-    animation: wobble 8s ease-in-out alternate infinite, blob-six ease-in-out 12s infinite;
+    animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
 }
 
 .blob:nth-child(7) {
-    width: 435px;
-    height: 435px;
+    width: 415px;
+    height: 415px;
     bottom: -45%;
     right: 40%;
 
-    animation: wobble 13s ease-in-out alternate infinite, blob-seven ease-in-out 42s infinite;
+    animation: wobble 12s ease-in-out alternate infinite, blob-seven ease-in-out 108s infinite;
 }
 
 @keyframes blob-one {
@@ -208,11 +209,11 @@
 
 
 @keyframes wobble {
-    50% {
-        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+                50% {
+        border-radius: 48% 50% 45% 50% / 55% 55% 50% 50%;
     }
 
     100% {
-        border-radius: 38% 52% 75% 36% / 50% 40% 50% 60%;
+        border-radius: 50% 52% 50% 54% / 50% 58% 50% 55%;
     }
 }
