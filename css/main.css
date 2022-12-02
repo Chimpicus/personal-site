@@ -21,8 +21,8 @@
 
 .blob {
   border-radius: 50%;
-  filter: blur(3px);
-  background: #4bb96e;
+  filter: blur(4px);
+  background: rgb(75, 185, 110);
   opacity: 100%;
   /* Other sample colors:
     Orange: #e8630a
@@ -42,11 +42,12 @@
 }
 
 .blob:nth-child(1) {
-  width: 200px;
+  width: 180px;
   height: 200px;
   left: 35%;
   bottom: -5%;
-  animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
 }
 
 .blob:nth-child(2) {
@@ -54,7 +55,8 @@
   height: 200px;
   right: 30%;
   bottom: -45%;
-  animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 38s infinite;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 38s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 38s infinite;
 }
 
 .blob:nth-child(3) {
@@ -62,7 +64,8 @@
   height: 150px;
   bottom: -15%;
   left: 34%;
-  animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
+  -webkit-animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
+          animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
 }
 
 .blob:nth-child(4) {
@@ -70,7 +73,8 @@
   height: 235px;
   bottom: -19%;
   left: 30%;
-  animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 32s infinite;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 32s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 32s infinite;
 }
 
 .blob:nth-child(4) {
@@ -78,7 +82,8 @@
   height: 235px;
   bottom: -25%;
   left: 30%;
-  animation: wobble 11s ease-in-out alternate infinite, blob-four ease-in-out 35s infinite;
+  -webkit-animation: wobble 11s ease-in-out alternate infinite, blob-four ease-in-out 35s infinite;
+          animation: wobble 11s ease-in-out alternate infinite, blob-four ease-in-out 35s infinite;
 }
 
 .blob:nth-child(5) {
@@ -86,7 +91,8 @@
   height: 55px;
   bottom: -25%;
   left: 34%;
-  animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 28s infinite;
+  -webkit-animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 28s infinite;
+          animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 28s infinite;
 }
 
 .blob:nth-child(6) {
@@ -94,7 +100,8 @@
   height: 35px;
   bottom: -25%;
   right: 34%;
-  animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
+  -webkit-animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
+          animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
 }
 
 .blob:nth-child(7) {
@@ -102,12 +109,12 @@
   height: 415px;
   bottom: -45%;
   right: 40%;
-  animation: wobble 12s ease-in-out alternate infinite, blob-seven ease-in-out 108s infinite;
+  -webkit-animation: wobble 12s ease-in-out alternate infinite, blob-seven ease-in-out 108s infinite;
+          animation: wobble 12s ease-in-out alternate infinite, blob-seven ease-in-out 108s infinite;
 }
 
-@keyframes blob-one {
-  0%,
-  100% {
+@-webkit-keyframes blob-one {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
@@ -115,75 +122,126 @@
   }
 }
 
-@keyframes blob-two {
-  0%,
-  100% {
+@keyframes blob-one {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-700%);
+  }
+}
+@-webkit-keyframes blob-two {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
     transform: translatey(-420%);
   }
 }
-
-@keyframes blob-three {
-  0%,
-  100% {
+@keyframes blob-two {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-420%);
+  }
+}
+@-webkit-keyframes blob-three {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
     transform: translatey(-305%);
   }
 }
-
-@keyframes blob-four {
-  0%,
-  100% {
+@keyframes blob-three {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-305%);
+  }
+}
+@-webkit-keyframes blob-four {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
     transform: translatey(-605%);
   }
 }
-
-@keyframes blob-five {
-  0%,
-  100% {
+@keyframes blob-four {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-605%);
+  }
+}
+@-webkit-keyframes blob-five {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
     transform: translatey(-1200%);
   }
 }
-
-@keyframes blob-six {
-  0%,
-  100% {
+@keyframes blob-five {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-1200%);
+  }
+}
+@-webkit-keyframes blob-six {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
     transform: translatey(-700%);
   }
 }
-
-@keyframes blob-seven {
-  0%,
-  100% {
+@keyframes blob-six {
+  0%, 100% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-700%);
+  }
+}
+@-webkit-keyframes blob-seven {
+  0%, 100% {
     transform: translatey(0);
   }
   50% {
     transform: translatey(-300%);
   }
 }
-
-@keyframes wobble {
-  50% {
-    border-radius: 48% 50% 45% 50% / 55% 55% 50% 50%;
+@keyframes blob-seven {
+  0%, 100% {
+    transform: translatey(0);
   }
-  100% {
-    border-radius: 50% 52% 50% 54% / 50% 58% 50% 55%;
+  50% {
+    transform: translatey(-300%);
   }
 }
-
+@-webkit-keyframes wobble {
+  50% {
+    border-radius: 48% 65% 50% 55%/55% 55% 50% 50%;
+  }
+  100% {
+    border-radius: 55% 58% 52% 56%/50% 64% 50% 51%;
+  }
+}
+@keyframes wobble {
+  50% {
+    border-radius: 48% 65% 50% 55%/55% 55% 50% 50%;
+  }
+  100% {
+    border-radius: 55% 58% 52% 56%/50% 64% 50% 51%;
+  }
+}
 .custom-shape-divider-bottom-1624272282 {
   position: relative;
   bottom: 0;
@@ -231,18 +289,15 @@
 html {
   scroll-behavior: smooth;
 }
-
 html body::-webkit-scrollbar {
   margin: 0;
   width: 0.3rem;
 }
-
 html body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.8);
 }
-
 html body::-webkit-scrollbar-thumb {
-  background: #4bb96e;
+  background: rgb(75, 185, 110);
   border-radius: 25px;
 }
 
@@ -254,10 +309,13 @@ html body::-webkit-scrollbar-thumb {
 }
 
 .background {
-  background-image: repeating-linear-gradient(45deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, rgba(161, 161, 161, 0.05) 0px, rgba(161, 161, 161, 0.05) 1px, transparent 1px, transparent 11px, rgba(161, 161, 161, 0.05) 11px, rgba(161, 161, 161, 0.05) 12px, transparent 12px, transparent 32px), linear-gradient(180deg, rgba(17, 17, 17, 0.9) 90%, rgba(25, 135, 85, 0.9) 100%);
+  background-image: repeating-linear-gradient(45deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), radial-gradient(at 40% 300%, rgb(75, 185, 110), black);
   position: fixed !important;
   height: 100%;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 100%;
   z-index: -1;
 }
@@ -273,32 +331,29 @@ html body::-webkit-scrollbar-thumb {
   padding: 0;
   height: 100vh;
 }
-
 .title-header {
   line-height: 1;
-  font-size: 4rem;
+  font-size: 6rem;
   margin: 25vh auto 1rem;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px black, 0 0 4px rgba(0, 0, 0, 0.7);
 }
-
 .title-subheader {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  text-decoration: overline #198754;
-  color: #198754;
-  text-shadow: 1px 1px black;
+  -webkit-text-decoration: overline rgb(25, 135, 84);
+          text-decoration: overline rgb(25, 135, 84);
+  color: rgb(25, 135, 84);
+  text-shadow: 1px 2px black, 0 0 4px rgba(0, 0, 0, 0.7);
 }
-
 .title-icon {
-  color: #198754;
+  color: rgb(25, 135, 84);
   font-size: 2rem;
   padding: 1rem;
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 2px black, 0 0 4px rgba(0, 0, 0, 0.7);
 }
-
 .title-icon:hover {
-  color: #ffff;
-  opacity: 50%;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px black, 0 0 4px rgba(0, 0, 0, 0.3);
   /* font-size: 2.1rem; */
 }
 
@@ -312,7 +367,6 @@ html body::-webkit-scrollbar-thumb {
   padding: 5% 10%;
   width: 100vw;
 }
-
 .about-bio {
   align-content: center;
   align-items: center;
@@ -329,39 +383,35 @@ html body::-webkit-scrollbar-thumb {
   text-align: center;
   width: 100%;
 }
-
 .about-bio-text {
   border-left: 1px solid black;
   margin: 5%;
   padding: 5%;
 }
-
 .about-bio-cover {
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-left: 2px solid black;
   display: flex;
   font-family: "Raleway", sans-serif;
   justify-content: center;
   padding: 0;
   position: absolute;
-  text-decoration: 2px underline;
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
   transition: 0.5s;
   height: 100%;
   width: 100%;
 }
-
 .about-bio-cover-header {
   font-size: 5rem;
   font-weight: 200;
   text-align: center;
 }
-
 .about-bio-cover:hover {
   opacity: 0%;
   transition: 0.3s;
 }
-
 .about-skills {
   align-content: center;
   align-items: center;
@@ -377,28 +427,26 @@ html body::-webkit-scrollbar-thumb {
   text-align: left;
   width: 100%;
 }
-
 .about-skills-cover {
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-left: 2px solid black;
   display: flex;
   font-family: "Raleway", sans-serif;
   justify-content: center;
   padding: 0;
   position: absolute;
-  text-decoration: 2px underline;
+  -webkit-text-decoration: 2px underline;
+          text-decoration: 2px underline;
   transition: 0.5s;
   height: 100%;
   width: 100%;
 }
-
 .about-skills-cover-header {
   font-size: 5rem;
   font-weight: 200;
   text-align: center;
 }
-
 .about-skills-grid {
   align-content: space-between;
   border-left: 1px solid black;
@@ -410,19 +458,16 @@ html body::-webkit-scrollbar-thumb {
   padding: 5% 0;
   height: 200px;
 }
-
 .about-skills-grid-item {
   flex: 1;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   margin: 10px;
 }
-
 .about-skills-cover:hover {
   opacity: 0%;
   transition: 0.3s;
 }
-
 .about-devskills {
   align-content: center;
   align-items: center;
@@ -438,28 +483,26 @@ html body::-webkit-scrollbar-thumb {
   text-align: left;
   width: 100%;
 }
-
 .about-devskills-cover {
   align-items: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-left: 2px solid black;
   display: flex;
   font-family: "Raleway", sans-serif;
   justify-content: center;
   padding: 0;
   position: absolute;
-  text-decoration: 1px underline;
+  -webkit-text-decoration: 1px underline;
+          text-decoration: 1px underline;
   transition: 0.5s;
   height: 100%;
   width: 100%;
 }
-
 .about-devskills-cover-header {
   font-size: 2rem;
   font-weight: 200;
   text-align: center;
 }
-
 .about-devskills-grid {
   align-content: space-between;
   border-left: 1px solid black;
@@ -471,40 +514,36 @@ html body::-webkit-scrollbar-thumb {
   padding: 5% 0;
   height: 100px;
 }
-
 .about-devskills-grid-item {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   margin: 10px;
 }
-
 .about-devskills-cover:hover {
   opacity: 0%;
   transition: 0.3s;
 }
-
 .about--green {
-  text-decoration: underline lightgreen;
+  -webkit-text-decoration: underline lightgreen;
+          text-decoration: underline lightgreen;
 }
-
 .about--orange {
-  text-decoration: underline lightsalmon;
+  -webkit-text-decoration: underline lightsalmon;
+          text-decoration: underline lightsalmon;
 }
 
 .contact {
   padding: 10% 0;
   text-align: center;
 }
-
 .contact-icon {
-  color: #198754;
+  color: rgb(25, 135, 84);
   font-size: 2rem;
   padding: 1rem;
   text-shadow: 1px 1px black;
 }
-
 .contact-icon:hover {
-  color: #ffff;
+  color: white;
   opacity: 50%;
 }
 
@@ -520,10 +559,8 @@ html body::-webkit-scrollbar-thumb {
     font-size: 15px;
   }
 }
-
 @media (max-width: 416px) {
   .body-wrapper {
     margin: 0 0;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
