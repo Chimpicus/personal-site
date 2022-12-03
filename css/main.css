@@ -1,18 +1,18 @@
 .lamp {
   position: absolute;
-  top: 50%;
-  left: 40%;
+  bottom: -50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   height: 100vh;
   height: 100vh;
   width: 100vw;
   min-width: 100vw;
-  z-index: -1;
+  z-index: -10;
 }
 
 .lava {
   filter: url("#goo");
-  position: absolute;
+  position: relative;
   height: 100%;
   width: 100%;
   top: 0;
@@ -21,7 +21,9 @@
 
 .blob {
   border-radius: 50%;
-  filter: blur(4px);
+  filter: blur(20px);
+  position: relative;
+  background: radial-gradient(at 50% 50%, rgb(66, 222, 116) 1%, rgb(135, 210, 125) 99%);
   opacity: 100%;
   /* Other sample colors:
     Orange: #e8630a
@@ -41,73 +43,73 @@
 }
 
 .blob:nth-child(1) {
-  background: green;
-  width: 180px;
-  height: 200px;
-  left: 43%;
-  bottom: -5%;
-  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
-          animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
+  width: 55px;
+  height: 55px;
+  bottom: 10%;
+  left: 45%;
+  z-index: -1;
+  -webkit-animation: wobble 10s ease-in-out alternate infinite, blob-one ease-in-out 120s infinite;
+          animation: wobble 10s ease-in-out alternate infinite, blob-one ease-in-out 120s infinite;
 }
 
 .blob:nth-child(2) {
-  background: purple;
-  width: 185px;
-  height: 200px;
-  left: 41%;
-  bottom: -45%;
-  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 10s infinite;
-          animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 10s infinite;
+  width: 55px;
+  height: 55px;
+  bottom: -10%;
+  left: 40%;
+  z-index: -6;
+  -webkit-animation: wobble 8s ease-in-out alternate infinite, blob-two ease-in-out 40s infinite;
+          animation: wobble 8s ease-in-out alternate infinite, blob-two ease-in-out 40s infinite;
 }
 
 .blob:nth-child(3) {
-  background: pink;
   width: 150px;
   height: 150px;
-  bottom: -15%;
-  left: 35%;
-  -webkit-animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
-          animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
+  bottom: -10%;
+  left: 38%;
+  z-index: -5;
+  -webkit-animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 50s infinite;
+          animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 50s infinite;
 }
 
 .blob:nth-child(4) {
-  background: orange;
-  width: 235px;
-  height: 235px;
-  bottom: -19%;
-  left: 43%;
-  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 80s infinite;
-          animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 80s infinite;
+  width: 185px;
+  height: 200px;
+  bottom: -10%;
+  left: 42%;
+  z-index: -4;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 45s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 45s infinite;
 }
 
 .blob:nth-child(5) {
-  background: yellow;
-  width: 55px;
-  height: 55px;
-  bottom: -25%;
-  left: 45%;
-  -webkit-animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 55s infinite;
-          animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 55s infinite;
+  width: 200px;
+  height: 200px;
+  left: 39%;
+  bottom: -10%;
+  z-index: -3;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 125s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 125s infinite;
 }
 
 .blob:nth-child(6) {
-  background: blue;
-  width: 35px;
-  height: 35px;
-  bottom: -25%;
-  right: 39%;
-  -webkit-animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
-          animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
+  width: 235px;
+  height: 235px;
+  bottom: -10%;
+  left: 41%;
+  z-index: -2;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-six ease-in-out 165s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-six ease-in-out 165s infinite;
 }
 
 .blob:nth-child(7) {
-  background: red;
   width: 500px;
-  height: 500px;
+  height: 400px;
   bottom: -35%;
-  right: 40%;
-  -webkit-animation: wobble 30s ease-in-out alternate infinite, blob-seven ease-in-out 160s infinite;
-          animation: wobble 30s ease-in-out alternate infinite, blob-seven ease-in-out 160s infinite;
+  left: 30%;
+  z-index: -1;
+  -webkit-animation: wobble 5s ease-in-out alternate infinite, blob-seven ease-in-out 185s infinite;
+          animation: wobble 5s ease-in-out alternate infinite, blob-seven ease-in-out 185s infinite;
 }
 
 @-webkit-keyframes blob-one {
@@ -115,7 +117,7 @@
     transform: translatey(20%);
   }
   50% {
-    transform: translatey(-300%);
+    transform: translatey(-660%);
   }
 }
 
@@ -124,7 +126,7 @@
     transform: translatey(20%);
   }
   50% {
-    transform: translatey(-300%);
+    transform: translatey(-660%);
   }
 }
 @-webkit-keyframes blob-two {
@@ -132,7 +134,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-220%);
+    transform: translatey(-440%);
   }
 }
 @keyframes blob-two {
@@ -140,7 +142,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-220%);
+    transform: translatey(-440%);
   }
 }
 @-webkit-keyframes blob-three {
@@ -148,7 +150,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-305%);
+    transform: translatey(-240%);
   }
 }
 @keyframes blob-three {
@@ -156,7 +158,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-305%);
+    transform: translatey(-240%);
   }
 }
 @-webkit-keyframes blob-four {
@@ -164,7 +166,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-260%);
+    transform: translatey(-275%);
   }
 }
 @keyframes blob-four {
@@ -172,7 +174,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-260%);
+    transform: translatey(-275%);
   }
 }
 @-webkit-keyframes blob-five {
@@ -180,7 +182,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-2000%);
+    transform: translatey(-330%);
   }
 }
 @keyframes blob-five {
@@ -188,7 +190,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-2000%);
+    transform: translatey(-330%);
   }
 }
 @-webkit-keyframes blob-six {
@@ -196,7 +198,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-340%);
+    transform: translatey(-275%);
   }
 }
 @keyframes blob-six {
@@ -204,7 +206,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-340%);
+    transform: translatey(-275%);
   }
 }
 @-webkit-keyframes blob-seven {
@@ -212,7 +214,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-20%);
+    transform: translatey(-10%);
   }
 }
 @keyframes blob-seven {
@@ -220,7 +222,7 @@
     transform: translatey(0);
   }
   50% {
-    transform: translatey(-20%);
+    transform: translatey(-10%);
   }
 }
 @-webkit-keyframes wobble {
@@ -294,7 +296,7 @@ html body::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.8);
 }
 html body::-webkit-scrollbar-thumb {
-  background: rgb(75, 185, 110);
+  background: rgb(66, 222, 116);
   border-radius: 25px;
 }
 
@@ -306,7 +308,7 @@ html body::-webkit-scrollbar-thumb {
 }
 
 .background {
-  background-image: repeating-linear-gradient(45deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), radial-gradient(at 40% 300%, rgb(75, 185, 110), black);
+  background-image: repeating-linear-gradient(45deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207deg, 0%, 63%, 0.05) 0px, hsla(207deg, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207deg, 0%, 63%, 0.05) 11px, hsla(207deg, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), radial-gradient(at 40% 300%, rgb(66, 222, 116), black);
   position: fixed !important;
   height: 100%;
   -webkit-user-select: none;

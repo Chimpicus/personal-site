@@ -1,18 +1,18 @@
 .lamp {
   position: absolute;
-  top: 50%;
-  left: 40%;
+  bottom: -50%;
+  left: 25%;
   transform: translate(-50%, -50%);
   height: 100vh;
   height: 100vh;
   width: 100vw;
   min-width: 100vw;
-  z-index: -1;
+  z-index: -10;
 }
 
 .lava {
-  filter: url('#goo');
-  position: absolute;
+  filter: url("#goo");
+  position: relative;
   height: 100%;
   width: 100%;
   top: 0;
@@ -21,10 +21,11 @@
 
 .blob {
   border-radius: 50%;
-  filter: blur(4px);
+  filter: blur(20px);
+  position: relative;
 
   // background: linear-gradient(142deg, rgba(25, 135, 84, 1) 10%,  rgba(103, 103, 103, 1) 30%, rgba(25, 135, 84, 1) 80% ,rgba(25, 135, 84, 1) 100%);
-  //   background: $lightgreen;
+  background: $radialgreen;
   opacity: 100%;
   /* Other sample colors:
     Orange: #e8630a
@@ -44,81 +45,87 @@
 }
 
 .blob:nth-child(1) {
-  background: green;
-  width: 180px;
-  height: 200px;
-  left: 43%;
-  bottom: -5%;
+  // background: blue;
+  width: 55px;
+  height: 55px;
+  bottom: 10%;
+  left: 45%;
+  z-index: -1;
 
-  animation: wobble 9s ease-in-out alternate infinite, blob-one ease-in-out 33s infinite;
+  animation: wobble 10s ease-in-out alternate infinite,
+    blob-one ease-in-out 120s infinite;
 }
 
 .blob:nth-child(2) {
-  background: purple;
-  width: 185px;
-  height: 200px;
-  left: 41%;
-  bottom: -45%;
+  // background: yellow;
+  width: 55px;
+  height: 55px;
+  bottom: -10%;
+  left: 40%;
+  z-index: -6;
 
-  animation: wobble 9s ease-in-out alternate infinite, blob-two ease-in-out 10s infinite;
+  animation: wobble 8s ease-in-out alternate infinite,
+    blob-two ease-in-out 40s infinite;
 }
 
 .blob:nth-child(3) {
-  background: pink;
+  // background: pink;
   width: 150px;
   height: 150px;
-  bottom: -15%;
-  left: 35%;
+  bottom: -10%;
+  left: 38%;
+  z-index: -5;
 
-  animation: wobble 7s ease-in-out alternate infinite, blob-three ease-in-out 30s infinite;
+  animation: wobble 7s ease-in-out alternate infinite,
+    blob-three ease-in-out 50s infinite;
 }
 
 .blob:nth-child(4) {
-  background: orange;
-  width: 235px;
-  height: 235px;
-  bottom: -19%;
-  left: 43%;
+  // background: purple;
+  width: 185px;
+  height: 200px;
+  bottom: -10%;
+  left: 42%;
+  z-index: -4;
 
-  animation: wobble 9s ease-in-out alternate infinite, blob-four ease-in-out 80s infinite;
+  animation: wobble 9s ease-in-out alternate infinite,
+    blob-four ease-in-out 45s infinite;
 }
 
-// .blob:nth-child(4) {
-//   width: 235px;
-//   height: 235px;
-//   bottom: -25%;
-//   left: 38%;
-//   animation: wobble 11s ease-in-out alternate infinite, blob-four ease-in-out 35s infinite;
-// }
-
 .blob:nth-child(5) {
-  background: yellow;
-  width: 55px;
-  height: 55px;
-  bottom: -25%;
-  left: 45%;
+  // background: cyan;
+  width: 200px;
+  height: 200px;
+  left: 39%;
+  bottom: -10%;
+  z-index: -3;
 
-  animation: wobble 8s ease-in-out alternate infinite, blob-five ease-in-out 55s infinite;
+  animation: wobble 9s ease-in-out alternate infinite,
+    blob-five ease-in-out 125s infinite;
 }
 
 .blob:nth-child(6) {
-  background: blue;
-  width: 35px;
-  height: 35px;
-  bottom: -25%;
-  right: 39%;
+  // background: orange;
+  width: 235px;
+  height: 235px;
+  bottom: -10%;
+  left: 41%;
+  z-index: -2;
 
-  animation: wobble 10s ease-in-out alternate infinite, blob-six ease-in-out 24s infinite;
+  animation: wobble 9s ease-in-out alternate infinite,
+    blob-six ease-in-out 165s infinite;
 }
 
 .blob:nth-child(7) {
-  background: red;
+  // background: red;
   width: 500px;
-  height: 500px;
+  height: 400px;
   bottom: -35%;
-  right: 40%;
+  left: 30%;
+  z-index: -1;
 
-  animation: wobble 30s ease-in-out alternate infinite, blob-seven ease-in-out 160s infinite;
+  animation: wobble 5s ease-in-out alternate infinite,
+    blob-seven ease-in-out 185s infinite;
 }
 
 @keyframes blob-one {
@@ -128,7 +135,7 @@
   }
 
   50% {
-    transform: translatey(-300%);
+    transform: translatey(-660%);
   }
 }
 
@@ -139,7 +146,7 @@
   }
 
   50% {
-    transform: translatey(-220%);
+    transform: translatey(-440%);
   }
 }
 
@@ -150,7 +157,7 @@
   }
 
   50% {
-    transform: translatey(-305%);
+    transform: translatey(-240%);
   }
 }
 
@@ -161,7 +168,7 @@
   }
 
   50% {
-    transform: translatey(-260%);
+    transform: translatey(-275%);
   }
 }
 
@@ -172,7 +179,7 @@
   }
 
   50% {
-    transform: translatey(-2000%);
+    transform: translatey(-330%);
   }
 }
 
@@ -183,7 +190,7 @@
   }
 
   50% {
-    transform: translatey(-340%);
+    transform: translatey(-275%);
   }
 }
 
@@ -194,7 +201,7 @@
   }
 
   50% {
-    transform: translatey(-20%);
+    transform: translatey(-10%);
   }
 }
 
