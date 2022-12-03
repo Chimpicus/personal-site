@@ -53,7 +53,7 @@
   z-index: -1;
 
   animation: wobble 10s ease-in-out alternate infinite,
-    blob-one ease-in-out 120s infinite;
+    blob-one ease-in-out 93s infinite;
 }
 
 .blob:nth-child(2) {
@@ -101,7 +101,7 @@
   z-index: -3;
 
   animation: wobble 9s ease-in-out alternate infinite,
-    blob-five ease-in-out 125s infinite;
+    blob-five ease-in-out 225s infinite;
 }
 
 .blob:nth-child(6) {
@@ -135,7 +135,7 @@
   }
 
   50% {
-    transform: translatey(-660%);
+    transform: translatey(-1000%);
   }
 }
 

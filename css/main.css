@@ -48,8 +48,8 @@
   bottom: 10%;
   left: 45%;
   z-index: -1;
-  -webkit-animation: wobble 10s ease-in-out alternate infinite, blob-one ease-in-out 120s infinite;
-          animation: wobble 10s ease-in-out alternate infinite, blob-one ease-in-out 120s infinite;
+  -webkit-animation: wobble 10s ease-in-out alternate infinite, blob-one ease-in-out 93s infinite;
+          animation: wobble 10s ease-in-out alternate infinite, blob-one ease-in-out 93s infinite;
 }
 
 .blob:nth-child(2) {
@@ -88,8 +88,8 @@
   left: 39%;
   bottom: -10%;
   z-index: -3;
-  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 125s infinite;
-          animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 125s infinite;
+  -webkit-animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 225s infinite;
+          animation: wobble 9s ease-in-out alternate infinite, blob-five ease-in-out 225s infinite;
 }
 
 .blob:nth-child(6) {
@@ -117,7 +117,7 @@
     transform: translatey(20%);
   }
   50% {
-    transform: translatey(-660%);
+    transform: translatey(-1000%);
   }
 }
 
@@ -126,7 +126,7 @@
     transform: translatey(20%);
   }
   50% {
-    transform: translatey(-660%);
+    transform: translatey(-1000%);
   }
 }
 @-webkit-keyframes blob-two {
@@ -323,6 +323,10 @@ html body::-webkit-scrollbar-thumb {
   font-size: 1.5rem;
 }
 
+#navbar:hover {
+  color: rgb(66, 222, 116);
+}
+
 .title {
   border: none;
   border-radius: 0 0 20px 20px;
@@ -339,13 +343,13 @@ html body::-webkit-scrollbar-thumb {
 .title-subheader {
   font-family: "Raleway", sans-serif;
   line-height: 1.5;
-  -webkit-text-decoration: overline rgb(25, 135, 84);
-          text-decoration: overline rgb(25, 135, 84);
-  color: rgb(25, 135, 84);
+  -webkit-text-decoration: overline rgb(66, 222, 116);
+          text-decoration: overline rgb(66, 222, 116);
+  color: rgb(66, 222, 116);
   text-shadow: 1px 2px black, 0 0 4px rgba(0, 0, 0, 0.7);
 }
 .title-icon {
-  color: rgb(25, 135, 84);
+  color: rgb(66, 222, 116);
   font-size: 2rem;
   padding: 1rem;
   text-shadow: 1px 2px black, 0 0 4px rgba(0, 0, 0, 0.7);

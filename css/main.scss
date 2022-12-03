@@ -1,7 +1,7 @@
 // ---imports---
-@import 'variables';
-@import 'lava-lamp';
-@import 'svg';
+@import "variables";
+@import "lava-lamp";
+@import "svg";
 // @import 'bootstrap';
 
 html {
@@ -30,7 +30,51 @@ html {
 }
 
 .background {
-  background-image: repeating-linear-gradient(45deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(0deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(135deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), repeating-linear-gradient(90deg, hsla(207, 0%, 63%, 0.05) 0px, hsla(207, 0%, 63%, 0.05) 1px, transparent 1px, transparent 11px, hsla(207, 0%, 63%, 0.05) 11px, hsla(207, 0%, 63%, 0.05) 12px, transparent 12px, transparent 32px), radial-gradient(at 40% 300%, $lightgreen, black);
+  background-image: repeating-linear-gradient(
+      45deg,
+      hsla(207, 0%, 63%, 0.05) 0px,
+      hsla(207, 0%, 63%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(207, 0%, 63%, 0.05) 11px,
+      hsla(207, 0%, 63%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      hsla(207, 0%, 63%, 0.05) 0px,
+      hsla(207, 0%, 63%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(207, 0%, 63%, 0.05) 11px,
+      hsla(207, 0%, 63%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      hsla(207, 0%, 63%, 0.05) 0px,
+      hsla(207, 0%, 63%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(207, 0%, 63%, 0.05) 11px,
+      hsla(207, 0%, 63%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      hsla(207, 0%, 63%, 0.05) 0px,
+      hsla(207, 0%, 63%, 0.05) 1px,
+      transparent 1px,
+      transparent 11px,
+      hsla(207, 0%, 63%, 0.05) 11px,
+      hsla(207, 0%, 63%, 0.05) 12px,
+      transparent 12px,
+      transparent 32px
+    ),
+    radial-gradient(at 40% 300%, $lightgreen, black);
   position: fixed !important;
   height: 100%;
   user-select: none;
@@ -41,6 +85,10 @@ html {
 // ---nav---
 #navbar {
   font-size: 1.5rem;
+}
+
+#navbar:hover {
+  color: $lightgreen;
 }
 
 //---title---
@@ -61,13 +109,13 @@ html {
   &-subheader {
     font-family: $raleway;
     line-height: 1.5;
-    text-decoration: overline $green;
-    color: $green;
+    text-decoration: overline $lightgreen;
+    color: $lightgreen;
     text-shadow: 1px 2px black, 0 0 4px rgba(0, 0, 0, 0.7);
   }
 
   &-icon {
-    color: $green;
+    color: $lightgreen;
     font-size: 2rem;
     padding: 1rem;
     text-shadow: 1px 2px black, 0 0 4px rgba(0, 0, 0, 0.7);
